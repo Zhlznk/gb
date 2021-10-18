@@ -3,17 +3,20 @@
 ## 1. Управление пользователями:
 
 - a) создать пользователя, используя утилиту useradd;
-
+```sh
 ~$ sudo useradd -m bogdan
 [sudo] пароль для zhlznk: 
 ~$ sudo id bogdan
 uid=1001(bogdan) gid=1001(bogdan) группы=1001(bogdan)
+```
 
 - b) удалить пользователя, используя утилиту userdel;
 
+```sh
 ~$ sudo userdel -r bogdan
 ~$ sudo id bogdan
 id: «bogdan»: такого пользователя нет
+```
 
 - c) создать пользователя в ручном режиме.
 
