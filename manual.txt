@@ -1,0 +1,27 @@
+﻿
+EMMET сокращение для ускорения верстки
+
+https://webdesign-master.ru/blog/html-css/2.html
+
+После символов надо добавлять Tab или Enter
+
+! - первоначальная структура документа
+link - <link rel="stylesheet" href="">
+.block - <div class="block"></div>
+.block>span — <div class="block"><span></span></div>
+
+Базовый синтаксис EMMET
+
+> - дочерний элемент
++ - соединение
+^ - поместить выше в дереве HTML
+() - группировка
+* - умножение
+$ - нумерация
+# - id
+a - атрибут
+{} - текст
+
+CSS сокращения
+
+
