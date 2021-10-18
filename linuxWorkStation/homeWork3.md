@@ -17,9 +17,10 @@ id: «bogdan»: такого пользователя нет
 
 - c) создать пользователя в ручном режиме.
 
-Добавляем строчку "bogdan:x:1001:1001:Bogdan Pokupaev,,,:/home/bogdan:/bin/bash" в passwd:
+Добавляем строчку в passwd:
 ```sh
-~$ sudo nano /etc/passwd
+~$ sudo nano /etc/passwd 
+#  bogdan:x:1001:1001:Bogdan Pokupaev,,,:/home/bogdan:/bin/bash
 ```
 
 Добавляем строчку "bogdan:x:1001:" в group:
