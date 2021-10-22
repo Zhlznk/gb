@@ -28,10 +28,10 @@ id: «bogdan»: такого пользователя нет
 
 Добавляем строчку в group:
 ```sh
-~$ sudo nano /etc/group
+~$ sudo nano / tc/group
 # bogdan:x:1001:
 ```
-Создаем домшнюю папку пользователя и копируем в нее (что-то нужно, но я пока не понял, зачем и что в нем):
+Создаем домшнюю папку пользователя и копируем в нее:
 ```sh
 ~$ sudo mkdir /home/bogdan
 ~$ sudo cp -v /etc/skel/.* /home/bogdan
@@ -83,6 +83,26 @@ bogdan : bogdan testing
 ~$ groups bogdan
 bogdan : bogdan
 ```
+
+## 3. Суперпользователь
+- Создать пользователя с правами суперпользователя:
+```sh
+~$ sudo usermod -aG sudo bogdan
+~$ cat /etc/group | grep sudo
+sudo:x:27:zhlznk,bogdan
+```
+- Сделать так, чтобы sudo не требовал пароль для выполнения команд:
+
+Надо изменить настройки sudo при помощи утилиты visudo
+
+```sh
+~$ sudo visudo
+
+#includedir /etc/sudoers.d
+bogdan ALL=(ALL:ALL) NOPASSWD: ALL
+```
+
+
 
 
 
