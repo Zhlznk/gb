@@ -95,10 +95,15 @@ cat: subtest/copy_sl: Нет такого файла или каталога
 ~/2gb/test$ ls -l mag
 -rw-rw-r-- 1 zhlznk zhlznk 0 окт 25 18:20 mag
 ```
-
-- Второму присвоить права на чтение и запись только для владельца. Сделать это в численном и символьном виде.
-~/2gb/test$ chmod 600 mega
+или
 ```sh
+~/2gb/test$ chmod ugo=rw mag
+~/2gb/test$ ls -l mag
+-rw-rw-rw- 1 zhlznk zhlznk 0 окт 25 18:20 mag
+```
+- Второму присвоить права на чтение и запись только для владельца. Сделать это в численном и символьном виде.
+```sh
+~/2gb/test$ chmod 600 mega
 ~/2gb/test$ ls -l mega 
 -rw------- 1 zhlznk zhlznk 0 окт 25 18:20 mega
 ```
