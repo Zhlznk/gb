@@ -31,7 +31,7 @@ id: «bogdan»: такого пользователя нет
 ~$ sudo nano / tc/group
 # bogdan:x:1001:
 ```
-Создаем домшнюю папку пользователя и копируем в нее:
+Создаем домашнюю папку пользователя и копируем в нее:
 ```sh
 ~$ sudo mkdir /home/bogdan
 ~$ sudo cp -v /etc/skel/.* /home/bogdan

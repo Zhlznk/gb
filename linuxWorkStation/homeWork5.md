@@ -95,6 +95,7 @@ cat: subtest/copy_sl: Нет такого файла или каталога
 ~/2gb/test$ ls -l mag
 -rw-rw-r-- 1 zhlznk zhlznk 0 окт 25 18:20 mag
 ```
+<<<<<<< HEAD
 или
 ```sh
 ~/2gb/test$ chmod ugo=rw mag
@@ -104,6 +105,12 @@ cat: subtest/copy_sl: Нет такого файла или каталога
 - Второму присвоить права на чтение и запись только для владельца. Сделать это в численном и символьном виде.
 ```sh
 ~/2gb/test$ chmod 600 mega
+=======
+
+- Второму присвоить права на чтение и запись только для владельца. Сделать это в численном и символьном виде.
+~/2gb/test$ chmod 600 mega
+```sh
+>>>>>>> c4a719a (added homeWork5.md)
 ~/2gb/test$ ls -l mega 
 -rw------- 1 zhlznk zhlznk 0 окт 25 18:20 mega
 ```
