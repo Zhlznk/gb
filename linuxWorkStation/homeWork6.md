@@ -84,6 +84,8 @@ Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: New relevant interface wlp3s0f0.IPv
 # 5.
 - Создать разовое задание на перезагрузку операционной системы, используя at.
 
+(Что-то пока не получается...)
+
 ```sh
 ~$ echo '/usr/sbin/shutdown -r now' | at 18:36
 warning: commands will be executed using /bin/sh
