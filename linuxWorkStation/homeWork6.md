@@ -71,21 +71,23 @@ $ cat calendar/2017/12/003.txt
 # 4.
 - Используя grep, проанализировать файл /var/log/syslog, отобрав события на своё усмотрение.
 
+Меня интересовало, что происходило, Oct 27 17:17:44, с участием avahi-daemon, в строке, где есть символы DNS:
 
-at 16:00
+```sh
+$ cat /var/log/syslog | grep -iE "DNS" | grep -iE "avahi-daemon" | grep -iE "Oct 27 17:17:44"
+Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: New relevant interface wlp3s0f0.IPv6 for mDNS.
+Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: Joining mDNS multicast group on interface wlp3s0f0.IPv4 with address xxx.xxx.x.xx.
+Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: New relevant interface wlp3s0f0.IPv4 for mDNS.
+```
 
 
 # 5.
 - Создать разовое задание на перезагрузку операционной системы, используя at.
 
 ```sh
-$ echo "reboot" > mag
-$ cat mag
-reboot
- at -f mag 16:51
+~$ at now + 1 minutes
 warning: commands will be executed using /bin/sh
-job 1 at Wed Oct 27 16:51:00 2021
+at> shutdown -r now
+at> <EOT>
+job 7 at Wed Oct 27 17:28:00 2021
 ```
-
-
-at 
