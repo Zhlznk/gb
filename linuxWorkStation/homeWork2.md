@@ -26,5 +26,3 @@
 
 - nano имя_файла
 - vim имя_файла
-
-[![asciicast](https://asciinema.org/a/7UD9gUDqNi8xpl59cUKl5JJeO.svg)](https://asciinema.org/a/7UD9gUDqNi8xpl59cUKl5JJeO)
