@@ -74,7 +74,7 @@ $ cat calendar/2017/12/003.txt
 Меня интересовало, что происходило, Oct 27 17:17:44, с участием avahi-daemon, в строке, где есть символы DNS:
 
 ```sh
-$ cat /var/log/syslog | grep -iE "DNS" | grep -iE "avahi-daemon" | grep -iE "Oct 27 17:17:44"
+~$ cat /var/log/syslog | grep -iE "DNS" | grep -iE "avahi-daemon" | grep -iE "Oct 27 17:17:44"
 Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: New relevant interface wlp3s0f0.IPv6 for mDNS.
 Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: Joining mDNS multicast group on interface wlp3s0f0.IPv4 with address xxx.xxx.x.xx.
 Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: New relevant interface wlp3s0f0.IPv4 for mDNS.
@@ -87,7 +87,10 @@ Oct 27 17:17:44 zhlznk-xx avahi-daemon[760]: New relevant interface wlp3s0f0.IPv
 (Что-то пока не получается...)
 
 ```sh
-~$ echo '/usr/sbin/shutdown -r now' | at 18:36
+~$ sudo at 18:52
+[sudo] пароль для zhlznk: 
 warning: commands will be executed using /bin/sh
-job 11 at Wed Oct 27 18:36:00 2021
+at> sudo reboot
+at> <EOT>
+job 13 at Wed Oct 27 18:52:00 2021
 ```
