@@ -1,7 +1,7 @@
 # 1. 
 - Подключить репозиторий с nginx любым удобным способом, установить nginx и потом удалить nginx, используя утилиту dpkg.
 
-[Инструкция] по установке.
+[Инструкция] по установке.[manual]
 Подготовка к установке:
 ```sh
 ~$ sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-archive-keyring
@@ -70,4 +70,4 @@ Chain OUTPUT (policy ACCEPT)
 target     prot opt source               destination   
 ```
 
-[Иструкция]: <https://nginx.org/ru/linux_packages.html>
+[manual]: <https://nginx.org/ru/linux_packages.html>
